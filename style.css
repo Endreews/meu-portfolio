@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+/* tirar margem e borda */
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    /* box-sizing serve para centralizar todos os elementos para todos os dispositivos */
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.titulo-color{
+    color: #2C3E50;
+}
+.react-color{
+    color:  #61DAFB;
+}
+.html-color{
+    color: #E34F26;
+}
+.css-color{
+    color: #1572B6;
+}
+.java-color{
+    color: #F89820;
+}
+.apresentacao{
+    margin: 15% 15%;
+/* display: flex; serve para ajustar os textos e imagens na pagina, colocar centralizado */
+    display: flex;
+    /* serve para alinhar os itens flexíveis ao centro do eixo principal do container flex. */
+    align-items: center;
+    /* define como os itens flexíveis serão distribuídos horizontalmente dentro do container flex. */
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+.apresentacao__conteudo__texto{
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+}
+.apresentacao__links{
+     display: flex;
+     justify-content: space-between;
+}
+.apresentacao__links__ancora{
+    background-color: #2C3E50;
+    width: 280px;
+    /* centralizar um texto */
+    text-align: center;
+    /* ajustar a borda de algo */
+    border-radius: 16px;
+    /* tamanho da fonte */
+    font-size: 24px;
+    /* O padding cria um espaço interno ao elemento, entre o conteúdo do elemento e a borda do elemento. */
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: "Roboto Slab", serif;
+}
+.foto-editar{
+    border-radius: 16px;
+
+}
