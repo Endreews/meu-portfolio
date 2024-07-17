@@ -14,7 +14,7 @@ body {
     color: white;
 }
 .titulo-color{
-    color: #2C3E50;
+    color: #27AE60;
 }
 .react-color{
     color:  #61DAFB;
@@ -29,7 +29,7 @@ body {
     color: #F89820;
 }
 .apresentacao{
-    margin: 15% 15%;
+    margin: 1% 15%;
 /* display: flex; serve para ajustar os textos e imagens na pagina, colocar centralizado */
     display: flex;
     /* serve para alinhar os itens flexíveis ao centro do eixo principal do container flex. */
@@ -56,7 +56,7 @@ body {
      justify-content: space-between;
 }
 .apresentacao__links__ancora{
-    background-color: #2C3E50;
+    background-color: #27AE60;
     width: 280px;
     /* centralizar um texto */
     text-align: center;
@@ -72,6 +72,8 @@ body {
     font-family: "Roboto Slab", serif;
 }
 .foto-editar{
-    border-radius: 16px;
-
+    max-width: 100%; /* A imagem nunca será maior que o contêiner */
+    height: auto; /* A altura será ajustada proporcionalmente */
+    border-radius: 15%;
+    margin-top: 20px;
 }
