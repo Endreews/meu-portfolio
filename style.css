@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     /* box-sizing serve para centralizar todos os elementos para todos os dispositivos */
     box-sizing: border-box;
     background-color: black;
@@ -29,8 +29,27 @@ body {
 .java-color{
     color: #F89820;
 }
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 5vh;
+}
+
+.cabecalho__menu__link{
+    /* text-decoration: none; retira o sublinhado dos links*/
+    text-decoration: none;
+    color: #27AE60;
+    font-family: "Roboto Slab", serif;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
 .apresentacao{
-    margin: 1% 15%;
+    padding: 3% 15%;
 /* display: flex; serve para ajustar os textos e imagens na pagina, colocar centralizado */
     display: flex;
     /* serve para alinhar os itens flexíveis ao centro do eixo principal do container flex. */
@@ -42,7 +61,7 @@ body {
     width: 70vh;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 5vh;
 }
 .apresentacao__conteudo__titulo{
     font-size: 5vh;
@@ -65,19 +84,19 @@ body {
     justify-content: center;
     gap: 1vh;
     width: 100%;
-    max-width: 350px;
+    max-width: 35vh;
     /* centralizar um texto */
     text-align: center;
     /* ajustar a borda de algo */
-    border-radius: 12px;
+    border-radius: 16px;
     /* tamanho da fonte */
-    font-size: 24px;
+    font-size: 2.5vh;
     /* O padding cria um espaço interno ao elemento, entre o conteúdo do elemento e a borda do elemento. */
     padding: 21.5px 0;
     text-decoration: none;
     color: white;
     border: 0.5vh solid #27AE60;
-    font-weight: 800;
+    font-weight: 600;
     font-family: "Roboto Slab", serif;
 }
 .apresentacao__links__subtitulo{
@@ -95,7 +114,6 @@ body {
 }
 .git-edit{
     width: 4vh;
-    border-radius: 50%;
     max-width: 100%;
     height: auto;
 }
@@ -108,4 +126,14 @@ body {
 .apresentacao__links__ancora:hover{
     background-color: white;
     color: black;
+}
+.footer-edit {
+    
+    padding: 2vh;
+    color: black;
+    background-color: #27AE60;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 2.5vh;
 }
