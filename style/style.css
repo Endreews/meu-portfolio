@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 /* tirar margem e borda */
 
@@ -38,21 +39,28 @@ body {
 }
 
 .cabecalho{
-    padding: 2% 0% 0% 15%;
+    padding: 1% 0% 1% 15%;
+    background-color: var(--cor-terciaria);
 }
 
 .cabecalho__menu{
+    
     display: flex;
-    gap: 5vh;
+    gap: 3vh;
+    
 }
-
 .cabecalho__menu__link{
     /* text-decoration: none; retira o sublinhado dos links*/
+
     text-decoration: none;
-    color: var(--cor-terciaria);
-    font-family: "Roboto Slab", serif;
+    color: var(--cor-primaria);
+    font-family: "Ubuntu", sans-serif;
     font-size: 3vh;
-    font-weight: 500;
+    font-weight: 700;
+    /* border-radius: 6vh;
+    border: 0.5vh solid var(--cor-secundaria);
+    background-color: var(--cor-primaria); */
+    padding: 0.1vh;
 }
 
 .apresentacao{
@@ -135,7 +143,7 @@ body {
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: "Roboto Slab", serif;
-    font-weight: 600;
-    font-size: 2.5vh;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
 }
