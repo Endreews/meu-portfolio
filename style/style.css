@@ -40,7 +40,8 @@ body {
 
 .cabecalho{
     padding: 1% 0% 1% 15%;
-    background-color: var(--cor-terciaria);
+    /* background-color: var(--cor-terciaria); */
+
 }
 
 .cabecalho__menu{
@@ -53,10 +54,11 @@ body {
     /* text-decoration: none; retira o sublinhado dos links*/
 
     text-decoration: none;
-    color: var(--cor-primaria);
+    color: var(--cor-terciaria);
     font-family: "Ubuntu", sans-serif;
-    font-size: 3vh;
-    font-weight: 700;
+    /* unidade de medida REM, ajusta para cada tipo de tela */
+    font-size: 1.5rem;
+    font-weight: 500;
     /* border-radius: 6vh;
     border: 0.5vh solid var(--cor-secundaria);
     background-color: var(--cor-primaria); */
@@ -72,16 +74,20 @@ body {
     align-items: center;
     /* define como os itens flexíveis serão distribuídos horizontalmente dentro do container flex. */
     justify-content: space-between;
+    gap: 75px;
 }
 .apresentacao__conteudo{
-    width: 65%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .apresentacao__conteudo__titulo{
-    font-size: 5vh;
+    font-size: 2rem;
     font-family: "Krona One", sans-serif;
 }
 .apresentacao__conteudo__texto{
-    font-size: 3vh;
+    font-size: 1.5rem;
     font-family: "Roboto Slab", serif;
     margin-bottom: 3%;
 }
@@ -97,15 +103,14 @@ body {
 .apresentacao__links__ancora{
     display: flex;
     justify-content: center;
-    gap: 1vh;
-    width: 100%;
-    max-width: 35vh;
+    gap: 16px;
+    width: 70%;
     /* centralizar um texto */
     text-align: center;
     /* ajustar a borda de algo */
     border-radius: 16px;
     /* tamanho da fonte */
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     /* O padding cria um espaço interno ao elemento, entre o conteúdo do elemento e a borda do elemento. */
     padding: 21.5px 0;
     text-decoration: none;
@@ -117,12 +122,11 @@ body {
 .apresentacao__links__subtitulo{
     font-family: "Roboto Slab", serif;
     font-weight: 400;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     }
 
 .foto-editar{
-    max-width: 100%; /* A imagem nunca será maior que o contêiner */
-    height: auto; /* A altura será ajustada proporcionalmente */
+    width: 50%;
     border-radius: 15%;
     margin-top: 20px;
     border: 0.5vh groove var(--cor-terciaria);
@@ -138,12 +142,29 @@ body {
     color: var(--cor-primaria);
 }
 .footer-edit {
-    
     padding: 2vh;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: "Ubuntu", sans-serif;
-    font-size: 2vh;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+@media (max-width: 1200px) {
+
+    .cabecalho{
+        padding: 3%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+    flex-direction: column-reverse;
+    padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
